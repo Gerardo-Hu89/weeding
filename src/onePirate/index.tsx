@@ -12,14 +12,15 @@ import { ProductSmokingHero } from './modules/views/productSmokingHero';
 const Index = (): JSX.Element => {
   return (
     <>
-      <AppAppBar />
+      Hello!!!
+      {/* <AppAppBar />
       <ProductHero />
       <ProductValues />
       <ProductCategories />
       <ProductHowItWorks />
       <ProductCTA />
       <ProductSmokingHero />
-      <AppFooter />
+  <AppFooter /> */}
     </>
   );
 };
