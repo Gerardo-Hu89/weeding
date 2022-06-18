@@ -59,7 +59,7 @@ export const ProductCategories = (): JSX.Element => {
     {
       url: 'https://images.unsplash.com/photo-1534081333815-ae5019106622?auto=format&fit=crop&w=400&q=80',
       title: t('generalInfo'),
-      width: '40%',
+      width: '40%', 
     },
     {
       url: 'https://images.unsplash.com/photo-1531299204812-e6d44d9a185c?auto=format&fit=crop&w=400&q=80',
