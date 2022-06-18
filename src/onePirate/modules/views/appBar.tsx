@@ -1,48 +1,35 @@
-import * as React from 'react';
+import { useEffect, useState } from 'react';
 import Box from '@mui/material/Box';
-import Link from '@mui/material/Link';
+import Select from '@mui/material/Select';
+import MenuItem from '@mui/material/MenuItem';
 import { AppBar } from '../components/appBar';
+import { useTranslation } from 'react-i18next';
 import { Toolbar } from '../components/toolBar';
+import i18n from '../../../i18n';
 
-const rightLink = {
-  ml: 3,
-  fontSize: 16,
-  color: 'common.white'
-};
+export const AppAppBar = (): JSX.Element => {
+  const { t } = useTranslation();
+  const [language, setLanguage] = useState<string>('en');
 
-export const AppAppBar = () => {
+  useEffect(() => {
+    i18n.changeLanguage(language);
+  }, [language]);
+
   return (
     <>
       <AppBar position="fixed">
         <Toolbar sx={{ justifyContent: 'space-between' }}>
-          <Box sx={{ flex: 1 }} />
-          <Link
-            variant="h6"
-            underline="none"
-            color="inherit"
-            href="/premium-themes/onepirate/"
-            sx={{ fontSize: 24 }}
-          >
-            Momo & Gera
-          </Link>
           <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
-            <Link
-              color="inherit"
-              variant="h6"
-              underline="none"
-              href="/premium-themes/onepirate/sign-in/"
-              sx={rightLink}
+            <h4>{t('language')}: &nbsp;</h4>
+            <Select
+              value={language}
+              style={{background:'white', maxHeight:'30px', marginTop:'18px'}}
+              onChange={(e) => setLanguage(e.target.value)}
             >
-              {'Sign In'}
-            </Link>
-            <Link
-              variant="h6"
-              underline="none"
-              href="/premium-themes/onepirate/sign-up/"
-              sx={{ ...rightLink, color: 'secondary.main' }}
-            >
-              {'Sign Up'}
-            </Link>
+              <MenuItem value="en">En</MenuItem>
+              <MenuItem value="es">Es</MenuItem>
+              <MenuItem value="fr">Fr</MenuItem>
+            </Select>
           </Box>
         </Toolbar>
       </AppBar>

@@ -1,0 +1,20 @@
+{
+  "en": {
+    "translation": {
+      "language": "Language",
+      "generalInfo": "General Information"
+    }
+  },
+  "fr": {
+    "translation": {
+      "language": "Langue",
+      "generalInfo": "Informations générales"
+    }
+  },
+  "es": {
+    "translation": {
+      "language": "Idioma",
+      "generalInfo": "Información general"
+    }
+  }
+}
