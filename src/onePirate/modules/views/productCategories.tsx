@@ -104,7 +104,6 @@ export const ProductCategories = (): JSX.Element => {
     <Container component="section" sx={{ mt: 8, mb: 4 }}>
       <Box sx={{ mt: 8, display: 'flex', flexWrap: 'wrap' }}>
         {images.map((image) => (
-          
           <ImageIconButton
             key={image.title}
             style={{width: image.width}}

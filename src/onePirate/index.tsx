@@ -9,7 +9,7 @@ import { ProductHowItWorks } from './modules/views/productHowItWorks';
 import { ProductCategories } from './modules/views/productCategories';
 import { ProductSmokingHero } from './modules/views/productSmokingHero';
 
-// import { GeneralInformation } from './generalInformation';
+import { GeneralInformation } from './generalInformation';
 // import { Itinerary } from './itinerary/itinerary';
 // import { Outfit } from './outfit';
 // import { Kids } from './kids/kids';
@@ -24,8 +24,8 @@ const Index = (): JSX.Element => {
       {/* <ProductHowItWorks />
       <ProductCTA />
       <ProductSmokingHero /> */}
-      {/* <GeneralInformation />
-      <Itinerary />
+      <GeneralInformation />
+      {/* <Itinerary />
       <Outfit />
       <Kids /> */}
       <AppFooter />
