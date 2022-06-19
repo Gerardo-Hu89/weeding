@@ -28,8 +28,6 @@ const number = {
   fontWeight: 'medium',
 };
 
-const curvyLinesImg = require("../static/themes/onepirate/productCurvyLines.png").default;
-
 const ItineraryBox = ({title, bodyText, icon}:any): JSX.Element => (
   <Grid item xs={12} md={4}>
     <Box sx={item}>
@@ -62,17 +60,6 @@ export const Itinerary = (): JSX.Element => {
           alignItems: 'center',
         }}
       >
-        <Box
-          component="img"
-          src={curvyLinesImg}
-          alt="curvy lines"
-          sx={{
-            pointerEvents: 'none',
-            position: 'absolute',
-            top: -180,
-            opacity: 0.7,
-          }}
-        />
         <Typography variant="h4" marked="center" component="h2" sx={{ mb: 14 }}>
           {t('itinerary')}
         </Typography>
