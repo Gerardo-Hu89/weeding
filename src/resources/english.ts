@@ -9,5 +9,6 @@ export const english = {
   tips: "Tips",
   generalInfoText: 'Event on February 18, 2023 at the "Quinta Santa Mónica" Hotel, in Lo de Marcos beach, Jalisco, Mex.',
   letsCelebrate: "Let's celebrate!",
-  mainSubText: "We're very happy to have your company!"
+  mainSubText: "We're very happy to have your company!",
+  footerAppInfo: "Weeding app is an informative-only app made by Momo & Gera"
 }

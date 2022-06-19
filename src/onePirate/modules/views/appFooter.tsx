@@ -1,10 +1,9 @@
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Link from '@mui/material/Link';
+import { useTranslation } from 'react-i18next';
 import Container from '@mui/material/Container';
 import Typography from '../components/typography';
-import { TextField } from '../components/textField';
-import CopyrightIcon from '@mui/icons-material/Copyright';
 
 const Copyright = (): JSX.Element => {
   return (
@@ -33,7 +32,9 @@ const iconStyle = {
 
 const facebookImg = require("../../static/themes/onepirate/appFooterFacebook.png");
 
-export const AppFooter = () => {
+export const AppFooter = (): JSX.Element => {
+  const { t } = useTranslation();
+
   return (
     <Typography
       component="footer"
@@ -64,7 +65,7 @@ export const AppFooter = () => {
           </Grid>
           <Grid item>
             <Typography variant="caption">
-              Weeding app is an informative app made by Momo & Gera
+              {t('footerAppInfo')}
             </Typography>
           </Grid>
         </Grid>
