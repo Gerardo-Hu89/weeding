@@ -135,7 +135,3 @@ code[class*='language-'] {
 .token.number {
   color: #b78eff;
 }
-
-html {
-    scroll-behavior: smooth !important;
-}
