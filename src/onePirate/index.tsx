@@ -11,7 +11,7 @@ import { ProductSmokingHero } from './modules/views/productSmokingHero';
 
 import { GeneralInformation } from './generalInformation';
 // import { Itinerary } from './itinerary';
-// import { Outfit } from './outfit';
+import { Outfit } from './outfit';
 // import { Kids } from './kids';
 
 const Index = (): JSX.Element => {
@@ -25,8 +25,8 @@ const Index = (): JSX.Element => {
       <ProductCTA />
       <ProductSmokingHero /> */}
       <GeneralInformation />
-      {/* <Itinerary />
       <Outfit />
+      {/* <Itinerary />
       <Kids /> */}
       <AppFooter />
     </>
