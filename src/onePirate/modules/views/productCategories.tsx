@@ -60,43 +60,43 @@ export const ProductCategories = (): JSX.Element => {
       url: 'https://images.unsplash.com/photo-1534081333815-ae5019106622?auto=format&fit=crop&w=400&q=80',
       title: t('generalInfo'),
       width: '40%',
-      link: '/general-information'
+      link: 'general-information'
     },
     {
       url: 'https://images.unsplash.com/photo-1531299204812-e6d44d9a185c?auto=format&fit=crop&w=400&q=80',
       title: t('itinerary'),
       width: '20%',
-      link: '/itinerary'
+      link: 'itinerary'
     },
     {
       url: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=400&q=80',
       title: t('transport'),
       width: '40%',
-      link: '/transport'
+      link: 'transport'
     },
     {
       url: 'https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?auto=format&fit=crop&w=400&q=80',
       title: t('outfit'),
       width: '24%',
-      link: '/outfit'
+      link: 'outfit'
     },
     {
       url: 'https://images.unsplash.com/photo-1506941433945-99a2aa4bd50a?auto=format&fit=crop&w=400&q=80',
       title: t('gifts'),
       width: '36%',
-      link: '/gifts'
+      link: 'gifts'
     },
     {
       url: 'https://images.unsplash.com/photo-1533727937480-da3a97967e95?auto=format&fit=crop&w=400&q=80',
       title: t('kidsInfo'),
       width: '20%',
-      link: '/kids-info'
+      link: 'kids-info'
     },
     {
       url: 'https://images.unsplash.com/photo-1518136247453-74e7b5265980?auto=format&fit=crop&w=400&q=80',
       title: t('tips'),
       width: '20%',
-      link: '/tips-and-advices'
+      link: 'tips-and-advices'
     },
   ];
 
@@ -104,10 +104,12 @@ export const ProductCategories = (): JSX.Element => {
     <Container component="section" sx={{ mt: 8, mb: 4 }}>
       <Box sx={{ mt: 8, display: 'flex', flexWrap: 'wrap' }}>
         {images.map((image) => (
+          
           <ImageIconButton
             key={image.title}
             style={{width: image.width}}
           >
+            <a href={`#${image.link}`}>
               <Box
                 sx={{
                   position: 'absolute',
@@ -144,6 +146,7 @@ export const ProductCategories = (): JSX.Element => {
                   <div className="imageMarked" />
                 </Typography>
               </Box>
+            </a>
           </ImageIconButton>
         ))}
       </Box>
