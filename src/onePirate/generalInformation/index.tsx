@@ -55,9 +55,9 @@ export const GeneralInformation = (): JSX.Element => {
               <Typography variant="h5" align="center">
                 {t('generalInfoText')}
                 <br />
-                <a href="https://www.quintasantamonica.com/">https://www.quintasantamonica.com/</a>
+                <a target="_blank" rel="noreferrer" href="https://www.quintasantamonica.com/">https://www.quintasantamonica.com/</a>
                 <br /><br />
-                <img width="100%" src={quintaHotel} alt="Quinta Santa Monica"/>
+                <img width="100%" src="https://static.wixstatic.com/media/64cded_a1207f4b8f2649548c7b2f8cd13d826c~mv2.jpg/v1/fill/w_940,h_468,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/64cded_a1207f4b8f2649548c7b2f8cd13d826c~mv2.jpg" alt="Quinta Santa Monica"/>
               </Typography>
             </Box>
           </Grid>
