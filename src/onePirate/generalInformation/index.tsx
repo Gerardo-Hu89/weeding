@@ -19,8 +19,8 @@ const image = {
   my: 4,
 };
 
-const quintaHotel = require("../../resources/images/quinta.jpeg");
-const suitCaseImg = require("../static/themes/onepirate/productValues1.svg").default;
+// const quintaHotel = require("../../resources/images/quinta.jpeg");
+// const suitCaseImg = require("../static/themes/onepirate/productValues1.svg").default;
 
 export const GeneralInformation = (): JSX.Element => {
   const { t } = useTranslation();
@@ -46,18 +46,18 @@ export const GeneralInformation = (): JSX.Element => {
         <Grid container spacing={5}>
           <Grid item xs={12} md={12}>
             <Box sx={item}>
-              <Box
+              {/* <Box
                 component="img"
                 src={suitCaseImg}
                 alt="suitcase"
                 sx={image}
-              />
+              /> */}
               <Typography variant="h5" align="center">
                 {t('generalInfoText')}
                 <br />
                 <a target="_blank" rel="noreferrer" href="https://www.quintasantamonica.com/">https://www.quintasantamonica.com/</a>
                 <br /><br />
-                <img width="100%" src={quintaHotel} alt="Quinta Santa Monica"/>
+                {/* <img width="100%" src={quintaHotel} alt="Quinta Santa Monica"/> */}
               </Typography>
             </Box>
           </Grid>

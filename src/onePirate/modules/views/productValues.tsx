@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { Theme } from '@mui/material/styles';
 import { SxProps } from '@mui/system';
 import Box from '@mui/material/Box';
@@ -13,9 +12,9 @@ const item: SxProps<Theme> = {
   px: 5,
 };
 
-const suitCaseImg = require("../../static/themes/onepirate/productValues1.svg").default;
-const graphImg = require("../../static/themes/onepirate/productValues2.svg").default;
-const clockImg = require("../../static/themes/onepirate/productValues3.svg").default;
+// const suitCaseImg = require("../../static/themes/onepirate/productValues1.svg").default;
+// const graphImg = require("../../static/themes/onepirate/productValues2.svg").default;
+// const clockImg = require("../../static/themes/onepirate/productValues3.svg").default;
 
 export const ProductValues = () => {
   return (
@@ -33,12 +32,12 @@ export const ProductValues = () => {
         <Grid container spacing={5}>
           <Grid item xs={12} md={4}>
             <Box sx={item}>
-              <Box
+              {/* <Box
                 component="img"
                 src={suitCaseImg}
                 alt="suitcase"
                 sx={{ height: 55 }}
-              />
+              /> */}
               <Typography variant="h6" sx={{ my: 5 }}>
                 The best luxury hotels
               </Typography>
@@ -49,12 +48,12 @@ export const ProductValues = () => {
           </Grid>
           <Grid item xs={12} md={4}>
             <Box sx={item}>
-              <Box
+              {/* <Box
                 component="img"
                 src={graphImg}
                 alt="graph"
                 sx={{ height: 55 }}
-              />
+              /> */}
               <Typography variant="h6" sx={{ my: 5 }}>
                 New experiences
               </Typography>
@@ -65,12 +64,12 @@ export const ProductValues = () => {
           </Grid>
           <Grid item xs={12} md={4}>
             <Box sx={item}>
-              <Box
+              {/* <Box
                 component="img"
                 src={clockImg}
                 alt="clock"
                 sx={{ height: 55 }}
-              />
+              /> */}
               <Typography variant="h6" sx={{ my: 5 }}>
                 Exclusive rates
               </Typography>

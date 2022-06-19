@@ -103,9 +103,6 @@ export const ProductCategories = (): JSX.Element => {
 
   return (
     <Container component="section" sx={{ mt: 8, mb: 4 }}>
-      <Typography variant="h4" marked="center" align="center" component="h2">
-        For all tastes and all desires
-      </Typography>
       <Box sx={{ mt: 8, display: 'flex', flexWrap: 'wrap' }}>
         {images.map((image) => (
           <ImageIconButton
