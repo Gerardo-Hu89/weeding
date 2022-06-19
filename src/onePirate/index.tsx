@@ -10,7 +10,7 @@ import { ProductCategories } from './modules/views/productCategories';
 import { ProductSmokingHero } from './modules/views/productSmokingHero';
 
 import { GeneralInformation } from './generalInformation';
-// import { Itinerary } from './itinerary/itinerary';
+import { Itinerary } from './itinerary/itinerary';
 // import { Outfit } from './outfit';
 // import { Kids } from './kids/kids';
 
@@ -25,8 +25,8 @@ const Index = (): JSX.Element => {
       <ProductCTA />
       <ProductSmokingHero /> */}
       <GeneralInformation />
-      {/* <Itinerary />
-      <Outfit />
+      <Itinerary />
+      {/* <Outfit />
       <Kids /> */}
       <AppFooter />
     </>
