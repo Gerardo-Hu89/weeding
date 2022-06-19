@@ -1,23 +1,22 @@
 const express = require("express");
+const path = require('path');
 
 const port = process.env.PORT || 8080;
 var app = express();
 
-// List of all the files that should be served as-is
-let protect = ['transformed.js', 'main.css', 'favicon.ico']
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+  app.get("/*", function(req, res) {
+    res.sendFile(path.join(__dirname, "./client/build/index.html"));
+  });
+}
 
-app.get("*", (req, res) => {
-
-  let path = req.params['0'].substring(1)
-
-  if (protect.includes(path)) {
-    // Return the actual file
-    res.sendFile(`${__dirname}/build/${path}`);
-  } else {
-    // Otherwise, redirect to /build/index.html
-    res.sendFile(`${__dirname}/build/index.html`);
-  }
-});
+else {
+  app.use(express.static(path.join(__dirname, '/client/public')));
+  app.get("/*", function(req, res) {
+    res.sendFile(path.join(__dirname, "./client/public/index.html"));
+  });
+}
 
 app.listen(port, () => {
   console.log(`Server is up on port ${port}`);
