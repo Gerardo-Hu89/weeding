@@ -1,18 +1,24 @@
-var path = require('path');
-var express = require('express');
+const express = require("express");
 
+const port = process.env.PORT || 8080;
 var app = express();
 
-app.use(express.static(path.join(__dirname, 'dist')));
-app.set('port', process.env.PORT || 8080);
+// List of all the files that should be served as-is
+let protect = ['transformed.js', 'main.css', 'favicon.ico']
 
 app.get("*", (req, res) => {
-  let url = path.join(__dirname, '../client/build', 'index.html');
-  if (!url.startsWith('/app/')) // since we're on local windows
-    url = url.substring(1);
-  res.sendFile(url);
+
+  let path = req.params['0'].substring(1)
+
+  if (protect.includes(path)) {
+    // Return the actual file
+    res.sendFile(`${__dirname}/build/${path}`);
+  } else {
+    // Otherwise, redirect to /build/index.html
+    res.sendFile(`${__dirname}/build/index.html`);
+  }
 });
 
-var server = app.listen(app.get('port'), function() {
-  console.log('listening on port ', server.address().port);
+app.listen(port, () => {
+  console.log(`Server is up on port ${port}`);
 });
