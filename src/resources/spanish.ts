@@ -22,4 +22,5 @@ export const spanish = {
   outfitText2: "Hombres: Casual formal (No Mezclilla).",
   outfitText3: "Llevar algún suéter o abrigo ya que en febrero hace mucho viento y el aire es un poco frio.",
   outfitText4: "Tips: Se aconseja llevar sombrero para ceremonia en la playa.",
+  kidsInfoText: "Habrá solo un brincolin para entrener a los niños.",
 }

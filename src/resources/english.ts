@@ -22,4 +22,5 @@ export const english = {
   outfitText2: "Men: Formal Casual (Not Denim).",
   outfitText3: "Bring a sweater or coat since in February it is very windy and the air is a bit cold.",
   outfitText4: "Tips: It is advisable to wear a hat for a ceremony on the beach.",
+  kidsInfoText: "There will be only one bounce house to entertain the children.",
 }
