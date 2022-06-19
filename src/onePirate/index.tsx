@@ -12,6 +12,7 @@ import { ProductSmokingHero } from './modules/views/productSmokingHero';
 import { GeneralInformation } from './generalInformation';
 import { Itinerary } from './itinerary/itinerary';
 import { Outfit } from './outfit';
+import { Kids } from './kids/kids';
 
 const Index = (): JSX.Element => {
   return (
@@ -26,6 +27,7 @@ const Index = (): JSX.Element => {
       <GeneralInformation />
       <Itinerary />
       <Outfit />
+      <Kids />
       <AppFooter />
     </>
   );

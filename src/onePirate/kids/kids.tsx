@@ -1,49 +1,15 @@
 import Box from '@mui/material/Box';
-import { SxProps } from '@mui/system';
-import Grid from '@mui/material/Grid';
-import { Theme } from '@mui/material/styles';
 import { useTranslation } from 'react-i18next';
 import Container from '@mui/material/Container';
-import IconButton from '@mui/material/IconButton';
-import LightModeIcon from '@mui/icons-material/LightMode';
 import Typography from '../modules/components/typography';
-import SevereColdIcon from '@mui/icons-material/SevereCold';
 // import { BackToHomeBtn } from '../components/backToHomeBtn';
 
-const item: SxProps<Theme> = {
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  px: 5,
-};
-
-const number = {
-  fontSize: 24,
-  fontFamily: 'default',
-  color: 'secondary.main',
-  fontWeight: 'medium',
-};
-
-const OutfitBox = ({title, bodyText, icon}:any): JSX.Element => (
-  <Grid item xs={12} md={6}>
-    <Box sx={item}>
-      <Box sx={number}>{title}</Box>
-      <IconButton>
-        {icon}
-      </IconButton>
-      <Typography variant="h5" align="center">
-        {bodyText}
-      </Typography>
-    </Box>
-  </Grid>
-);
-
-export const Outfit = (): JSX.Element => {
+export const Kids = (): JSX.Element => {
   const { t } = useTranslation();
 
   return (
     <Box
-      id="outfit"
+      id="kids-info"
       component="section"
       sx={{ display: 'flex', bgcolor: 'secondary.light', overflow: 'hidden' }}
     >
