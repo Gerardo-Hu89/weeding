@@ -9,7 +9,7 @@ import i18n from '../../../i18n';
 
 export const AppAppBar = (): JSX.Element => {
   const { t } = useTranslation();
-  const [language, setLanguage] = useState<string>('es');
+  const [language, setLanguage] = useState<string>('en');
 
   useEffect(() => {
     i18n.changeLanguage(language);
@@ -25,7 +25,7 @@ export const AppAppBar = (): JSX.Element => {
             style={{background:'white', maxHeight:'30px', marginTop:'18px'}}
             onChange={(e) => setLanguage(e.target.value)}
           >
-            {/* <MenuItem value="en">En</MenuItem> */}
+            <MenuItem value="en">En</MenuItem>
             <MenuItem value="es">Es</MenuItem>
             {/* <MenuItem value="fr">Fr</MenuItem> */}
           </Select>

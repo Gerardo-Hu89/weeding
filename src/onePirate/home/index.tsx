@@ -8,10 +8,10 @@ import { ProductSmokingHero } from '../modules/views/productSmokingHero';
 export const Home = () => (
   <>
     <ProductHero />
-    <ProductValues />
+    {/* <ProductValues /> */}
     <ProductCategories />
-    <ProductHowItWorks />
-    <ProductCTA />
-    <ProductSmokingHero />
+    {/* <ProductHowItWorks /> */}
+    {/* <ProductCTA /> */}
+    {/* <ProductSmokingHero /> */}
   </>
 );

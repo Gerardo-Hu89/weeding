@@ -31,9 +31,6 @@ interface ProductHeroLayoutProps {
   sxBackground: SxProps<Theme>;
 }
 
-const wonderImg = require("../../static/themes/onepirate/productHeroWonder.png");
-const arrowDownImg = require("../../static/themes/onepirate/productHeroArrowDown.png");
-
 export const ProductHeroLayout = (
   props: React.HTMLAttributes<HTMLDivElement> & ProductHeroLayoutProps,
 ) => {
