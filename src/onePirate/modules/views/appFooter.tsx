@@ -30,7 +30,7 @@ const iconStyle = {
   },
 };
 
-// const facebookImg = require("../../static/themes/onepirate/appFooterFacebook.png");
+const facebookImg = require("../../static/themes/onepirate/appFooterFacebook.png");
 
 export const AppFooter = (): JSX.Element => {
   const { t } = useTranslation();
@@ -51,12 +51,12 @@ export const AppFooter = (): JSX.Element => {
               sx={{ height: 120 }}
             >
               <Grid item sx={{ display: 'flex' }}>
-                {/* <Box component="a" href="https://www.facebook.com/lyken8" sx={iconStyle}>
+                <Box component="a" href="https://www.facebook.com/lyken8" sx={iconStyle}>
                   <img src={facebookImg} alt="Facebook" />
                 </Box>
                 <Box component="a" href="https://www.facebook.com/maurane.sagot" sx={iconStyle}>
                   <img src={facebookImg} alt="Facebook" />
-                </Box> */}
+                </Box>
               </Grid>
               <Grid item>
                 <Copyright />
