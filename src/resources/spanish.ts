@@ -18,4 +18,9 @@ export const spanish = {
   mariachi: "Mariachi - 6:00p.m a 8:00p.m",
   dinner: "Cena en Quinta Santa Mónica - 9:00p.m",
   continueTheParty: "Y que siga la fiesta hasta que el cuerpo aguante!",
+  outfitText1: "Llevar ropa suave y ligera, mujeres desde vestidos cortos a largos sencillos y formales al mismo tiempo (No etiqueta).",
+  outfitText2: "Hombres: Casual formal (No Mezclilla).",
+  outfitText3: "Llevar algún suéter o abrigo ya que en febrero hace mucho viento y el aire es un poco frio.",
+  outfitText4: "Tips: Se aconseja llevar sombrero para ceremonia en la playa.",
+  kidsInfoText: "Habrá solo un brincolin para entrener a los niños.",
 }

@@ -9,16 +9,25 @@ import { ProductHowItWorks } from './modules/views/productHowItWorks';
 import { ProductCategories } from './modules/views/productCategories';
 import { ProductSmokingHero } from './modules/views/productSmokingHero';
 
+// import { GeneralInformation } from './generalInformation';
+// import { Itinerary } from './itinerary/itinerary';
+// import { Outfit } from './outfit';
+// import { Kids } from './kids/kids';
+
 const Index = (): JSX.Element => {
   return (
     <>
       <AppAppBar />
       <ProductHero />
-      <ProductValues />
+      {/* <ProductValues /> */}
       <ProductCategories />
-      <ProductHowItWorks />
+      {/* <ProductHowItWorks />
       <ProductCTA />
-      <ProductSmokingHero />
+      <ProductSmokingHero /> */}
+      {/* <GeneralInformation />
+      <Itinerary />
+      <Outfit />
+      <Kids /> */}
       <AppFooter />
     </>
   );

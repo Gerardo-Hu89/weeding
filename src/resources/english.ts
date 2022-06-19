@@ -17,5 +17,10 @@ export const english = {
   cocktailsAndSnacks: "Cocktails & Snacks - 5:00p.m",
   mariachi: "Mariachi - 6:00p.m a 8:00p.m",
   dinner: "Dinner at Quinta Santa Monica - 9:00p.m",
-  continueTheParty: "And let the party continue 'til the body can hold on!"
+  continueTheParty: "And let the party continue 'til the body can hold on!",
+  outfitText1: "Wear soft and light clothing, women from short to long simple and formal dresses at the same time.",
+  outfitText2: "Men: Formal Casual (Not Denim).",
+  outfitText3: "Bring a sweater or coat since in February it is very windy and the air is a bit cold.",
+  outfitText4: "Tips: It is advisable to wear a hat for a ceremony on the beach.",
+  kidsInfoText: "There will be only one bounce house to entertain the children.",
 }

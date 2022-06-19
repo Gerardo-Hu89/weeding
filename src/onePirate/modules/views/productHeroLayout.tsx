@@ -31,9 +31,6 @@ interface ProductHeroLayoutProps {
   sxBackground: SxProps<Theme>;
 }
 
-const wonderImg = require("../../static/themes/onepirate/productHeroWonder.png");
-const arrowDownImg = require("../../static/themes/onepirate/productHeroArrowDown.png");
-
 export const ProductHeroLayout = (
   props: React.HTMLAttributes<HTMLDivElement> & ProductHeroLayoutProps,
 ) => {
@@ -48,14 +45,9 @@ export const ProductHeroLayout = (
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
+          paddingTop: '50px'
         }}
       >
-        <img
-          src={wonderImg}
-          alt="wonder"
-          width="147"
-          height="80"
-        />
         {children}
         <Box
           sx={{
@@ -70,14 +62,6 @@ export const ProductHeroLayout = (
           }}
         />
         <Background sx={sxBackground} />
-        <Box
-          component="img"
-          src={arrowDownImg}
-          height="16"
-          width="12"
-          alt="arrow down"
-          sx={{ position: 'absolute', bottom: 32 }}
-        />
       </Container>
     </ProductHeroLayoutRoot>
   );
