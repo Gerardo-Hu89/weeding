@@ -1,24 +1,24 @@
-import { Home } from './home';
+import React from 'react';
 import withRoot from './modules/withRoot';
-import { ScrollToTop } from '../resources/misc';
-import { Itinerary } from './itinerary/itinerary';
-import { Routes, Route } from "react-router-dom";
 import { AppAppBar } from './modules/views/appBar';
 import { AppFooter } from './modules/views/appFooter';
-import { GeneralInformation } from './generalInformation';
+import { ProductCTA } from './modules/views/productCTA';
+import { ProductHero } from './modules/views/productHero';
+import { ProductValues } from './modules/views/productValues';
+import { ProductHowItWorks } from './modules/views/productHowItWorks';
+import { ProductCategories } from './modules/views/productCategories';
+import { ProductSmokingHero } from './modules/views/productSmokingHero';
 
 const Index = (): JSX.Element => {
   return (
     <>
-      <ScrollToTop />
       <AppAppBar />
-      <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/general-information" element={<GeneralInformation />}/>
-        <Route path="/itinerary" element={<Itinerary />}/>
-        {/* TODO: Not found section */}
-        <Route path="*" element={<div>Not Found</div>} />
-      </Routes>
+      <ProductHero />
+      <ProductValues />
+      <ProductCategories />
+      <ProductHowItWorks />
+      <ProductCTA />
+      <ProductSmokingHero />
       <AppFooter />
     </>
   );

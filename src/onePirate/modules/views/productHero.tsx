@@ -1,12 +1,11 @@
-import { useTranslation } from 'react-i18next';
+import React from 'react';
+import { Button } from '../components/button';
 import Typography from '../components/typography';
 import { ProductHeroLayout } from './productHeroLayout';
 
-const backgroundImage = 'https://media.istockphoto.com/photos/tropical-beach-palm-trees-sea-wave-and-white-sand-picture-id1300296030?b=1&k=20&m=1300296030&s=170667a&w=0&h=w1s7kmN2TH7O326d263Cs-E44teA1hy6u29UIVf_z1w=';
+const backgroundImage = 'https://images.unsplash.com/photo-1534854638093-bada1813ca19?auto=format&fit=crop&w=1400&q=80';
 
-export const ProductHero = (): JSX.Element => {
-  const { t } = useTranslation();
-
+export const ProductHero = () => {
   return (
     <ProductHeroLayout
       sxBackground={{
@@ -21,8 +20,8 @@ export const ProductHero = (): JSX.Element => {
         src={backgroundImage}
         alt="increase priority"
       />
-      <Typography color="inherit" align="center" variant="h2">
-        {t('letsCelebrate')}
+      <Typography color="inherit" align="center" variant="h2" marked="center">
+        Upgrade your Sundays
       </Typography>
       <Typography
         color="inherit"
@@ -30,7 +29,20 @@ export const ProductHero = (): JSX.Element => {
         variant="h5"
         sx={{ mb: 4, mt: { sx: 4, sm: 10 } }}
       >
-        {t('mainSubText')}
+        Enjoy secret offers up to -70% off the best luxury hotels every Sunday.
+      </Typography>
+      <Button
+        color="secondary"
+        variant="contained"
+        size="large"
+        component="a"
+        href="/premium-themes/onepirate/sign-up/"
+        sx={{ minWidth: 200 }}
+      >
+        Register
+      </Button>
+      <Typography variant="body2" color="inherit" sx={{ mt: 2 }}>
+        Discover the experience
       </Typography>
     </ProductHeroLayout>
   );
