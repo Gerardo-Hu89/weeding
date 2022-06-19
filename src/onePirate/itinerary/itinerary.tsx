@@ -80,34 +80,34 @@ export const Itinerary = (): JSX.Element => {
           <Grid container spacing={5}>
             <ItineraryBox
               title={"1"}
-              bodyText={"Dinamicas - 11:00a.m  a 1:00p.m"}
+              bodyText={t('dynamics')}
               icon={<SurfingIcon sx={{ fontSize: "80px", color: '#000000' }} />}
             />
             <ItineraryBox
               title={"2"}
-              bodyText={"Ceremonia - 4:00p.m"}
+              bodyText={t('ceremony')}
               icon={<WcIcon sx={{ fontSize: "80px", color: '#000000' }} />}
             />
             <ItineraryBox
               title={"3"}
-              bodyText={"Cocteleria y snacks - 5:00p.m"}
+              bodyText={t('cocktailsAndSnacks')}
               icon={<SportsBarIcon sx={{ fontSize: "80px", color: '#000000' }} />}
             />
             <ItineraryBox
               title={"4"}
-              bodyText={"Mariachi - 6:00p.m a 8:00p.m"}
+              bodyText={t('mariachi')}
               icon={<MusicNoteIcon sx={{ fontSize: "80px", color: '#000000' }} />}
             />
             <ItineraryBox
               title={"5"}
-              bodyText={"Cena en Quinta Santa Monica - 9:00a.m"}
+              bodyText={t('dinner')}
               icon={<RestaurantIcon sx={{ fontSize: "80px", color: '#000000' }} />}
             />
           </Grid>
         </div>
         <br /><br />
         <Typography variant="h4" component="h2" sx={{ mb: 14 }}>
-          Y que siga la fiesta hasta que el cuerpo aguante!
+          {t('continueTheParty')}
         </Typography>
         <NightlifeIcon sx={{ fontSize: "100px", color: '#000000' }}/>
         <BackToHomeBtn />

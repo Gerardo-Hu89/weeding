@@ -43,7 +43,6 @@ export const GeneralInformation = (): JSX.Element => {
         <Typography variant="h4" marked="center" component="h2" sx={{ mb: 14 }}>
           {t('generalInfo')}
         </Typography>
-        {console.log(quintaHotel)}
         <Grid container spacing={5}>
           <Grid item xs={12} md={12}>
             <Box sx={item}>
