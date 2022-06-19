@@ -13,7 +13,7 @@ const item: SxProps<Theme> = {
   px: 5,
 };
 
-const quintaHotel = require("../../resources/images/quinta.jpeg");
+// const quintaHotel = require("../../resources/images/quinta.jpeg");
 
 export const GeneralInformation = (): JSX.Element => {
   const { t } = useTranslation();
@@ -45,7 +45,7 @@ export const GeneralInformation = (): JSX.Element => {
                 <br />
                 <a target="_blank" rel="noreferrer" href="https://www.quintasantamonica.com/">https://www.quintasantamonica.com/</a>
                 <br /><br />
-                <img width="100%" src={quintaHotel} alt="Quinta Santa Monica"/>
+                {/* <img width="100%" src={quintaHotel} alt="Quinta Santa Monica"/> */}
               </Typography>
             </Box>
           </Grid>
