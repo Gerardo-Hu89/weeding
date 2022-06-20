@@ -3,6 +3,7 @@ import Typography from '../components/typography';
 import { ProductHeroLayout } from './productHeroLayout';
 
 const backgroundImage = 'https://media.istockphoto.com/photos/tropical-beach-palm-trees-sea-wave-and-white-sand-picture-id1300296030?b=1&k=20&m=1300296030&s=170667a&w=0&h=w1s7kmN2TH7O326d263Cs-E44teA1hy6u29UIVf_z1w=';
+const bcImg = require('../../../resources/images/waves.png');
 
 export const ProductHero = (): JSX.Element => {
   const { t } = useTranslation();
@@ -10,7 +11,7 @@ export const ProductHero = (): JSX.Element => {
   return (
     <ProductHeroLayout
       sxBackground={{
-        backgroundImage: `url(${backgroundImage})`,
+        backgroundImage: `url(${bcImg})`,
         backgroundColor: '#7fc7d9', // Average color of the background image.
         backgroundPosition: 'center',
       }}

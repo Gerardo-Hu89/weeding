@@ -57,13 +57,13 @@ export const ProductCategories = (): JSX.Element => {
   const { t } = useTranslation();
   const images = [
     {
-      url: 'https://images.unsplash.com/photo-1534081333815-ae5019106622?auto=format&fit=crop&w=400&q=80',
+      url: require('../../../resources/images/stars.png'),
       title: t('generalInfo'),
       width: '40%',
       link: 'general-information'
     },
     {
-      url: 'https://images.unsplash.com/photo-1531299204812-e6d44d9a185c?auto=format&fit=crop&w=400&q=80',
+      url: require('../../../resources/images/pineapple.png'),
       title: t('itinerary'),
       width: '20%',
       link: 'itinerary'
@@ -75,25 +75,25 @@ export const ProductCategories = (): JSX.Element => {
       link: 'transport'
     },
     {
-      url: 'https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?auto=format&fit=crop&w=400&q=80',
+      url: 'https://images.unsplash.com/photo-1498877877506-bddff9f7207e?auto=format&fit=crop&w=687&q=80',
       title: t('outfit'),
       width: '24%',
       link: 'outfit'
     },
     {
-      url: 'https://images.unsplash.com/photo-1506941433945-99a2aa4bd50a?auto=format&fit=crop&w=400&q=80',
+      url: require('../../../resources/images/palmTree.png'),
       title: t('gifts'),
       width: '36%',
       link: 'gifts'
     },
     {
-      url: 'https://images.unsplash.com/photo-1533727937480-da3a97967e95?auto=format&fit=crop&w=400&q=80',
+      url: 'https://images.unsplash.com/photo-1522432111935-cd9ae647fc8b?auto=format&fit=crop&w=1470&q=80',
       title: t('kidsInfo'),
       width: '20%',
       link: 'kids-info'
     },
     {
-      url: 'https://images.unsplash.com/photo-1518136247453-74e7b5265980?auto=format&fit=crop&w=400&q=80',
+      url: require('../../../resources/images/palmTrees.png'),
       title: t('tips'),
       width: '20%',
       link: 'tips-and-advices'
