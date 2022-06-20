@@ -69,7 +69,7 @@ export const ProductCategories = (): JSX.Element => {
       link: 'itinerary'
     },
     {
-      url: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=400&q=80',
+      url: 'https://images.unsplash.com/photo-1636138105000-6e8eb02a744e?auto=format&fit=crop&w=1470&q=80',
       title: t('transport'),
       width: '40%',
       link: 'transport'
