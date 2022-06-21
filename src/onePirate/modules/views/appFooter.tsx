@@ -1,34 +1,21 @@
-import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Link from '@mui/material/Link';
 import { useTranslation } from 'react-i18next';
 import Container from '@mui/material/Container';
 import Typography from '../components/typography';
 
-const Copyright = (): JSX.Element => {
-  return (
-    <>
-      {'© '}
-      <Link color="inherit" href="https://weeding-app.herokuapp.com/">
-        Weeding App
-      </Link>{' '}
-      {new Date().getFullYear()}
-    </>
-  );
-}
-
-const iconStyle = {
-  width: 48,
-  height: 48,
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  backgroundColor: 'info.main',
-  mr: 1,
-  '&:hover': {
-    bgcolor: 'info.dark',
-  },
-};
+// const iconStyle = {
+//   width: 48,
+//   height: 48,
+//   display: 'flex',
+//   justifyContent: 'center',
+//   alignItems: 'center',
+//   backgroundColor: 'info.main',
+//   mr: 1,
+//   '&:hover': {
+//     bgcolor: 'info.dark',
+//   },
+// };
 
 // const facebookImg = require("../../static/themes/onepirate/appFooterFacebook.png");
 
@@ -48,7 +35,7 @@ export const AppFooter = (): JSX.Element => {
               direction="column"
               justifyContent="flex-end"
               spacing={2}
-              sx={{ height: 120 }}
+              sx={{ height: 100 }}
             >
               {/* <Grid item sx={{ display: 'flex' }}>
                 <Box component="a" href="https://www.facebook.com/lyken8" sx={iconStyle}>
@@ -59,7 +46,8 @@ export const AppFooter = (): JSX.Element => {
                 </Box>
               </Grid> */}
               <Grid item>
-                <Copyright />
+                © Momo & Gera &nbsp;
+                {new Date().getFullYear()}
               </Grid>
             </Grid>
           </Grid>

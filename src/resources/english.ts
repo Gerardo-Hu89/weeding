@@ -10,7 +10,7 @@ export const english = {
   generalInfoText: 'Event on February 18, 2023 at the "Quinta Santa Mónica" Hotel, in Lo de Marcos beach, Jalisco, Mex.',
   letsCelebrate: "Let's celebrate!",
   mainSubText: "We're very happy to have your company!",
-  footerAppInfo: "Weeding app is an informative-only app made by Momo & Gera",
+  footerAppInfo: "This informative-only app was made by Momo & Gera",
   backBtn: "Back",
   dynamics: "Dynamics - 11:00a.m  a 1:00p.m",
   ceremony: "Ceremony - 4:00pm",

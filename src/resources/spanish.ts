@@ -10,7 +10,7 @@ export const spanish = {
   generalInfoText: 'Evento el 18 de febrero 2023 en el Hotel "Quinta Santa Mónica", en playa lo de Marcos, Jalisco, Mex.',
   letsCelebrate: "Let's celebrate!",
   mainSubText: "Estamos muy contentos de contar con tu compañía!",
-  footerAppInfo: "Weeding app aplicación informativa creada por Momo & Gera",
+  footerAppInfo: "Esta aplicación informativa fue creada por Momo & Gera",
   backBtn: "Volver",
   dynamics: "Dinámicas - 11:00a.m  a 1:00p.m",
   ceremony: "Ceremonia - 4:00pm",
