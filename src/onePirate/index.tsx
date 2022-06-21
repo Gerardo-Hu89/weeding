@@ -10,8 +10,8 @@ import { ProductCategories } from './modules/views/productCategories';
 
 import { GeneralInformation } from './generalInformation';
 import { Itinerary } from './itinerary';
-// import { Outfit } from './outfit';
-// import { Kids } from './kids';
+import { Outfit } from './outfit';
+import { Kids } from './kids';
 
 const Index = (): JSX.Element => {
   return (
@@ -25,8 +25,8 @@ const Index = (): JSX.Element => {
       <ProductSmokingHero /> */}
       <GeneralInformation />
       <Itinerary />
-      {/* <Outfit />
-      <Kids /> */}
+      <Outfit />
+      <Kids />
       <AppFooter />
     </>
   );
