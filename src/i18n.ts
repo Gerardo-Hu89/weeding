@@ -6,7 +6,7 @@ i18n
   .use(initReactI18next)
   .init({
     resources: languages,
-    lng: "en",
+    lng: "es",
     interpolation: {
       escapeValue: false
     }

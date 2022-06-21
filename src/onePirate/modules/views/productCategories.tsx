@@ -96,7 +96,7 @@ export const ProductCategories = (): JSX.Element => {
       url: require('../../../resources/images/palmTrees.png'),
       title: t('tips'),
       width: '20%',
-      link: 'tips-and-advices'
+      link: 'tips'
     },
   ];
 
